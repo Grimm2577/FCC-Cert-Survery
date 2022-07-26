@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="styles.css">
+  <head></head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Help improve the service</p>
+    <form id="survey-form">
+      <div class="center">
+      <label class="cLabel" id="name-label">Name: <input required id="name" type="text" placeholder="Enter Your Name"/></label>
+      <label class="cLabel" id="email-label">Email:<input required id="email" type="email" placeholder="Enter Your Email"/></label>
+      <label class="nLabel" id="number-label" >Number: <input class="longerInput" required id="number" type="number" min="8" max="8" placeholder="Enter Your Number"/></label>
+
+    <label class="pudding"> Favorite Desert?
+    <select id="dropdown">
+      <option>Cake</option>
+      <option>Pie</option>
+      <option>Ice-cream</option>
+    </select>
+    </label>
+
+    <fieldset>
+      <legend>Prefered Improvements?</legend>
+      	<label><input class="diline" type="radio" value="gui" name="radio-selecter"> GUI</label>
+	<label><input class="diline" type="radio" value="curriculum" name="radio-selecter"> Curriculum</label>
+	<label><input class="diline"type="checkbox" value="return">Return?</label>
+	<label><input class="diline" type="checkbox" value="no-return"> Not-Returning</label>
+
+    	<textarea Placeholder="Add a personal comment :)"></textarea>
+    </fieldset>
+	
+	<div class="btn-div">
+	  <button id="submit" type="submit">Submit</button>
+	</div>
+    </div>
+    </form>
+  </body>
+</html>
